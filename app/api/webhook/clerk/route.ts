@@ -66,6 +66,7 @@ if (eventType === 'user.created') {
         username: username!,
     }
 
+    // Create new database user
     const newUser = await createUser(user)
 
     if(newUser) {
